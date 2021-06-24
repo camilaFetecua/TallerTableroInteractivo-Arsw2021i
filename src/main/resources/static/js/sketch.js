@@ -1,7 +1,11 @@
 //Este código asume que las librerías de P5.js ya están cargadas.
 //Esta función se ejecuta una sola vez al inicio del script.
 //calcular color
-let points = {pointsarr : [], colorRGB: };
+const r = Math.floor(Math.random()*240)+10;          // Random between 0-255
+const g = Math.floor(Math.random()*240)+10;          // Random between 0-255
+const b = Math.floor(Math.random()*240)+10;
+
+let points = {pointsarr : [] };
 
 let timerID = setInterval(
     () => checkPoints(),
@@ -13,7 +17,7 @@ function checkPoints(){
     points = {pointsarr : []};
 
     //fetch("/points?payload= "+ JSON.stringify(points))
-      //  .then(res => console.log(res))
+    //  .then(res => console.log(res))
     fetch("/points",{
         method: 'POST',
         headers:{
@@ -34,7 +38,7 @@ function setup() {
 // Esta función se ejecuta repetidas veces indefinidamente.
 function draw() {
     if (mouseIsPressed === true) {
-        fill(0,0,0);
+        fill(r,g,b);
         ellipse(mouseX, mouseY, 20, 20);
         points.pointsarr.push([mouseX,mouseY])
     }
@@ -43,20 +47,8 @@ function draw() {
     }
 
 }
-//areglo 3 posiciones
-function colorRGB(){
-    var color = "("+generarNumero(255)+"," + generarNumero(255) + "," + generarNumero(255) +")";
-    return "rgb" + color;
-}
 
-function regenerar() {
-    for (var i = 0; i < 10; i++) {
-
-    }
-
-}
 
 function borrar() {
     points.clearRect(0, 0, canvas.width, canvas.height);
 }
-

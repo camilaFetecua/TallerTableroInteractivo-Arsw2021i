@@ -17,10 +17,11 @@ public class TallerTableroInteractivoApplication {
 
 		SpringApplication.run(TallerTableroInteractivoApplication.class, args);
 	}
-	@GetMapping("/setname")
-	public String setName(@RequestParam(value = "name", defaultValue =
-			"Anónimo") String name) {
+	/*@GetMapping("/setname")
+	public String setName(@RequestParam(value = "name", defaultValue = "Anónimo") String name) {
 		request.getSession().setAttribute("name", name);
+		//Usuario usuario = new Usuario(name);
+
 		return String.format("Hello %s!", name);
-	}
+	}*/
 }
