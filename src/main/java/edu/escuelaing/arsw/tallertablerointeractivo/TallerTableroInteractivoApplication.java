@@ -10,18 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 
 @SpringBootApplication
 public class TallerTableroInteractivoApplication {
-	@Resource
-	private HttpServletRequest request;
 
 	public static void main(String[] args) {
 
 		SpringApplication.run(TallerTableroInteractivoApplication.class, args);
 	}
-	/*@GetMapping("/setname")
-	public String setName(@RequestParam(value = "name", defaultValue = "Anónimo") String name) {
-		request.getSession().setAttribute("name", name);
-		//Usuario usuario = new Usuario(name);
-
-		return String.format("Hello %s!", name);
-	}*/
 }

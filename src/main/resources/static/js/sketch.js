@@ -1,11 +1,13 @@
 //Este código asume que las librerías de P5.js ya están cargadas.
 //Esta función se ejecuta una sola vez al inicio del script.
 //calcular color
-const r = Math.floor(Math.random()*240)+10;          // Random between 0-255
-const g = Math.floor(Math.random()*240)+10;          // Random between 0-255
-const b = Math.floor(Math.random()*240)+10;
 
-let points = {pointsarr : [] };
+    const r = Math.floor(Math.random()*240)+10;          // Random between 0-255
+    const g = Math.floor(Math.random()*240)+10;          // Random between 0-255
+    const b = Math.floor(Math.random()*240)+10;
+
+
+let points = {pointsarr : [],color:[r,g,b]};
 
 let timerID = setInterval(
     () => checkPoints(),
@@ -14,7 +16,7 @@ let timerID = setInterval(
 
 function checkPoints(){
     let msg= points;
-    points = {pointsarr : []};
+    points = {pointsarr : [],color:[r,g,b]};
 
     //fetch("/points?payload= "+ JSON.stringify(points))
     //  .then(res => console.log(res))
@@ -29,8 +31,6 @@ function checkPoints(){
         .then(result => console.log(result));
 
 }
-
-
 
 function setup() {
     createCanvas(640, 480);
