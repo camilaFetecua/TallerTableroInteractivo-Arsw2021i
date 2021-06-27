@@ -1,15 +1,15 @@
 # Taller Tablero Interactivo
-## Taller ARSW 2021-i / 21 Junio del 2021
 
-  El objetivo de este taller es Ahora intente desarrollar un tablero interactivo
+## Taller ARSW 2021-i / 28 Junio del 2021
+
+  El objetivo de este taller es el desarrollo de un tablero interactivo
   que permita a múltiples usuarios dibujar en un tablero compartido.El tablero 
   debe permitir a múltiples usuarios dibujar en línea y proveer un botón de
-  borrado. Lo que cada persona dibuje debe aparecer en el tablero de todas las
-  otras personas. Cada persona debe iniciar con un color diferente. Cuándo 
+  borrado. Cada persona debe iniciar con un color diferente. Cuándo 
   alguien oprime el botón de borrar el tablero se borra para todas las personas.
 
   
-# Prerequisitos 
+# Prerrequisitos 
   + Git version 2.25.1
   + Apavhe Maven version 4.0.0
   + Java version 11.0.11
@@ -29,23 +29,46 @@
 
     mvn package
   
-  Y despues de ejecutar el comando aterior se debe ejecutar el siguiente comando
+  Y despues de ejecutar el comando anterior se debe ejecutar el siguiente comando
   
   java -cp "target/classes;target/dependency/*" edu.escuelaing.arsw.tallertablerointeractivo
   
       
 # Diagrama de clases  
 
+![Imagen](https://github.com/camilaFetecua/TallerTableroInteractivo-Arsw2021i/blob/master/Imagenes/Diagrama%20de%20clases.PNG)
 
-![Imagen]()
-
-  Para este proyecto usamos solo una clase 
+  Para este taller utilizamos 5 clases 
+  
+   + TallerTableroInteractivoApplication: Es la clase principal donde se ejcuta el programa y esta el main. 
+   + PointsController:Es la clase que controle el manejo de peticiones que se obtienen en la pagina. 
+   + PointsCache: Es la clase en la cual se obtiene los graficos      dibujados por cada uno de los usuarios y el registro de estos.
+   + Usuario: Clase en la cual se obtienen los datos como el nombre y el color de cada uno de los usuarios.
+   + Point: Clase con la cual se obtiene las coordenasdas especificas y el color de cada punto-
   
  # Pruebas 
  
- Para pruebas usamos la aplicacion intentando adivina un numero aleatorio que nos da el sistema 
+ Para pruebas usamos la aplicacion que esta en el siguiente link 
  
- ![Imagen](https://github.com/camilaFetecua/Picas-y-Famas-/blob/master/Imagenes/Juego.PNG)
+ 
+ Ingresamos el nombre del primer usuario y le damos registrar 
+ 
+  ![Imagen](https://github.com/camilaFetecua/TallerTableroInteractivo-Arsw2021i/blob/master/Imagenes/Prueba1.PNG)
+  
+  Y empezamos a realizar el dubujo y nos aparece los puntos de un color especifico 
+  
+  ![Imagen](https://github.com/camilaFetecua/TallerTableroInteractivo-Arsw2021i/blob/master/Imagenes/Prueba2.PNG)
+  
+  En otra ventana del navegador abrimos el mismo link y registramos otro usuario y podemos ver como inica los puntos de un color diferente. 
+  
+ ![Imagen](https://github.com/camilaFetecua/TallerTableroInteractivo-Arsw2021i/blob/master/Imagenes/Prueba3.PNG)
+ 
+Al lado derecho del boton de regitrar , queda el boton de borrar cuando le hacemos clic podemos observar que se borra el contenido de la pantalla. 
+
+![Imagen](https://github.com/camilaFetecua/TallerTableroInteractivo-Arsw2021i/blob/master/Imagenes/Prueba4.PNG)
+
+  
+ 
 
 # Licencia
 
