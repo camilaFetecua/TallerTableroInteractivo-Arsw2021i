@@ -15,4 +15,5 @@ public class TallerTableroInteractivoApplication {
 
 		SpringApplication.run(TallerTableroInteractivoApplication.class, args);
 	}
+
 }

@@ -47,8 +47,13 @@ function draw() {
     }
 
 }
-
-
 function borrar() {
-    points.clearRect(0, 0, canvas.width, canvas.height);
+    noLoop();
+    points.length=0;
+    clear();
+
+}
+function registrar(){
+    var usuario = document.getElementById("name").value;
+    axios.get('/setname?name='+ usuario);
 }
