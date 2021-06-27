@@ -50,6 +50,8 @@
  
  Para pruebas usamos la aplicacion que esta en el siguiente link 
  
+    https://tablero-interactivo-arsw.herokuapp.com/
+    
  
  Ingresamos el nombre del primer usuario y le damos registrar 
  
@@ -72,7 +74,7 @@ Al lado derecho del boton de regitrar , queda el boton de borrar cuando le hacem
 
 # Licencia
 
-  Para consultar la Licencia del proyecto haga [click aqui]()
+  Para consultar la Licencia del proyecto haga [click aqui](https://github.com/camilaFetecua/TallerTableroInteractivo-Arsw2021i/blob/master/LICENSE.md)
   
   
 # Autor 
