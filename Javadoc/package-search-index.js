@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.escuelaing.arsw.tallertablerointeractivo"},{"l":"edu.escuelaing.arsw.tallertablerointeractivo.Cache"},{"l":"edu.escuelaing.arsw.tallertablerointeractivo.Controller"},{"l":"edu.escuelaing.arsw.tallertablerointeractivo.Entities"}];updateSearchResults();

@@ -9,7 +9,14 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 @SpringBootApplication
+/**
+ * Es la clase principal donde se ejcuta el programa y esta el main.
+ */
 public class TallerTableroInteractivoApplication {
+	/**
+	 * Metodo principal de la clase
+	 * @param args
+	 */
 
 	public static void main(String[] args) {
 
